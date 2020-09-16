@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    link(rel="stylesheet" type="text/css" href="css/styles.css")
+
+
+  body
+    h1 Pat Pattinson Metaphor Exercise
+    p= data
+    p In Pat Pattinson's book lyrics there's a neat exercise to get your metaphor generation going
+
+    button(onclick='myFunction()') Show random verb
+    #myDiv
+        p= data.verb
+
+    //- .form__container
+    form(name='WordForm')
+        input#wordbox(type='TEXT' name='WordBox')
+        br
+        input#button(type='BUTTON' value='Generate' onclick='PickRandomWord(document.WordForm);')
+
+    script(src="js/domFunctions.js")
